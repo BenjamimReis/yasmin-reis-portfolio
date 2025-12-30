@@ -2,107 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yasmin Reis | Interior Design Portfolio</title>
+  <title>Yasmin Reis | Interior Design</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f5f5f2;
-      color: #333;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      background-color: #f6f7f4;
+      color: #2f3a34;
     }
-    header {
-      padding: 60px 20px;
+
+    /* HERO */
+    .hero {
+      position: relative;
+      height: 90vh;
+      background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .hero-overlay {
+      background: rgba(246, 247, 244, 0.85);
+      padding: 60px;
       text-align: center;
-      background: #e8e6df;
+      max-width: 700px;
     }
-    header h1 {
+
+    .hero h1 {
+      font-size: 48px;
       margin: 0;
-      font-size: 42px;
+      letter-spacing: 2px;
+    }
+
+    .hero p {
+      margin-top: 20px;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    /* SECTIONS */
+    section {
+      max-width: 1200px;
+      margin: 100px auto;
+      padding: 0 30px;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
       letter-spacing: 1px;
     }
-    header p {
-      font-size: 18px;
-      max-width: 600px;
-      margin: 20px auto 0;
-    }
-    main {
-      max-width: 1100px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
+
+    /* PROJECT GRID */
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 30px;
+      gap: 40px;
     }
+
     .project {
-      background: white;
-      padding: 25px;
-      border-radius: 8px;
       text-decoration: none;
       color: inherit;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
-      transition: transform 0.2s;
     }
-    .project:hover {
-      transform: translateY(-5px);
+
+    .project img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
+      border-radius: 4px;
     }
+
     .project h3 {
-      margin-top: 0;
+      margin-top: 15px;
+      font-size: 20px;
     }
+
+    /* FOOTER */
     footer {
       text-align: center;
-      padding: 40px 20px;
-      color: #777;
+      padding: 60px 20px;
+      background: #e4e8e1;
+      font-size: 14px;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Yasmin Reis</h1>
-  <p>
-    Interior Designer focused on spatial optimization, custom furniture, 
-    residential renovations and detailed manual design.
-  </p>
-</header>
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-overlay">
+    <h1>Yasmin Reis</h1>
+    <p>
+      Interior designer focused on requalifying spaces, custom furniture,
+      residential renovations and detailed manual design with a natural,
+      elegant and timeless approach.
+    </p>
+  </div>
+</div>
 
-<main>
-  <section class="projects">
+<!-- PROJECTS -->
+<section>
+  <h2>Selected Projects</h2>
+
+  <div class="projects">
 
     <a class="project" href="project.html?project=1">
+      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013" />
       <h3>Environmental Requalification</h3>
-      <p>Transformation of existing spaces with functional and aesthetic focus.</p>
     </a>
 
     <a class="project" href="project.html?project=2">
+      <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" />
       <h3>Custom & Planned Furniture</h3>
-      <p>Exclusive furniture designed to fit each space perfectly.</p>
     </a>
 
     <a class="project" href="project.html?project=3">
+      <img src="https://images.unsplash.com/photo-1595526114035-45c93e9a8d5a" />
       <h3>Space Optimization</h3>
-      <p>Smart layouts to maximize usability and comfort.</p>
     </a>
 
     <a class="project" href="project.html?project=4">
+      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea" />
       <h3>Residential Renovation</h3>
-      <p>Complete renovation projects with attention to detail.</p>
     </a>
 
     <a class="project" href="project.html?project=5">
+      <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20" />
       <h3>Manual Detailing</h3>
-      <p>Hand-drawn details such as stairs, cabinetry, panels and niches.</p>
     </a>
 
     <a class="project" href="project.html?project=6">
-      <h3>Concept & Portfolio Structures</h3>
-      <p>Creative concepts, spatial ideas and environment studies.</p>
+      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea" />
+      <h3>Concept & Spatial Studies</h3>
     </a>
 
-  </section>
-</main>
+  </div>
+</section>
 
 <footer>
   © 2025 Yasmin Reis · Interior Design
