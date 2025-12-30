@@ -2,149 +2,154 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Yasmin Reis | Interior Design</title>
+  <title>Yasmin Reis</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <style>
     body {
       margin: 0;
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      background-color: #f6f7f4;
-      color: #2f3a34;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f8f6;
+      color: #1f2a24;
     }
 
-    /* HERO */
-    .hero {
-      position: relative;
-      height: 90vh;
-      background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c");
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-overlay {
-      background: rgba(246, 247, 244, 0.85);
-      padding: 60px;
-      text-align: center;
-      max-width: 700px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin: 0;
-      letter-spacing: 2px;
-    }
-
-    .hero p {
-      margin-top: 20px;
-      font-size: 18px;
-      line-height: 1.6;
-    }
-
-    /* SECTIONS */
-    section {
-      max-width: 1200px;
-      margin: 100px auto;
-      padding: 0 30px;
-    }
-
-    h2 {
-      font-size: 32px;
-      margin-bottom: 40px;
-      letter-spacing: 1px;
-    }
-
-    /* PROJECT GRID */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 40px;
-    }
-
-    .project {
+    a {
       text-decoration: none;
       color: inherit;
     }
 
+    header {
+      padding: 40px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 20px;
+      font-weight: normal;
+      letter-spacing: 1px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      font-size: 14px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 140px auto;
+      padding: 0 60px;
+    }
+
+    h2 {
+      font-size: 34px;
+      font-weight: normal;
+      margin-bottom: 40px;
+    }
+
+    p {
+      max-width: 600px;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 50px;
+      margin-top: 60px;
+    }
+
     .project img {
       width: 100%;
-      height: 280px;
+      height: 260px;
       object-fit: cover;
-      border-radius: 4px;
+      margin-bottom: 15px;
     }
 
-    .project h3 {
-      margin-top: 15px;
-      font-size: 20px;
-    }
-
-    /* FOOTER */
     footer {
-      text-align: center;
-      padding: 60px 20px;
-      background: #e4e8e1;
-      font-size: 14px;
+      padding: 80px 60px;
+      font-size: 13px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-<!-- HERO -->
-<div class="hero">
-  <div class="hero-overlay">
-    <h1>Yasmin Reis</h1>
-    <p>
-      Interior designer focused on requalifying spaces, custom furniture,
-      residential renovations and detailed manual design with a natural,
-      elegant and timeless approach.
-    </p>
-  </div>
-</div>
+<header>
+  <h1>Yasmin Reis</h1>
+  <nav>
+    <a href="#follow">Follow</a>
+    <a href="#architecture">Architecture</a>
+    <a href="#projects">Projects</a>
+    <a href="#creative">Creative</a>
+  </nav>
+</header>
 
-<!-- PROJECTS -->
-<section>
-  <h2>Selected Projects</h2>
+<section id="follow">
+  <h2>Follow</h2>
+  <p>
+    Email: flaviayasmindosreisamorin9@gmail.com<br><br>
+    LinkedIn: 
+    <a href="https://www.linkedin.com/in/yasmin-reis-b76496340/" target="_blank">
+      linkedin.com/in/yasmin-reis
+    </a>
+  </p>
+</section>
+
+<section id="architecture">
+  <h2>Architecture</h2>
+  <p>
+    My work is focused on spatial clarity, natural materials and thoughtful
+    design solutions. I explore balance between function, aesthetics and
+    handcrafted details, creating environments that feel intentional and timeless.
+  </p>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
 
   <div class="projects">
 
     <a class="project" href="project.html?project=1">
-      <img src="https://images.unsplash.com/photo-1618220179428-22790b461013" />
-      <h3>Environmental Requalification</h3>
+      <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c">
+      Environmental Requalification
     </a>
 
     <a class="project" href="project.html?project=2">
-      <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab" />
-      <h3>Custom & Planned Furniture</h3>
+      <img src="https://images.unsplash.com/photo-1600121848594-d8644e57abab">
+      Custom Furniture
     </a>
 
     <a class="project" href="project.html?project=3">
-      <img src="https://images.unsplash.com/photo-1595526114035-45c93e9a8d5a" />
-      <h3>Space Optimization</h3>
+      <img src="https://images.unsplash.com/photo-1595526114035-45c93e9a8d5a">
+      Space Optimization
     </a>
 
     <a class="project" href="project.html?project=4">
-      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea" />
-      <h3>Residential Renovation</h3>
+      <img src="https://images.unsplash.com/photo-1600210492493-0946911123ea">
+      Residential Renovation
     </a>
 
     <a class="project" href="project.html?project=5">
-      <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20" />
-      <h3>Manual Detailing</h3>
-    </a>
-
-    <a class="project" href="project.html?project=6">
-      <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea" />
-      <h3>Concept & Spatial Studies</h3>
+      <img src="https://images.unsplash.com/photo-1616047006789-b7af5afb8c20">
+      Manual Detailing
     </a>
 
   </div>
 </section>
 
+<section id="creative">
+  <h2>Creative</h2>
+  <p>
+    Conceptual studies, hand sketches, spatial ideas and experimental layouts
+    developed as part of an ongoing creative process.
+  </p>
+</section>
+
 <footer>
-  © 2025 Yasmin Reis · Interior Design
+  © 2025 Yasmin Reis
 </footer>
 
 </body>
